@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Range Print</title>
+        <script>
+            function printRange(start, stop, skip){
+                if(stop == undefined && skip == undefined){
+                    for(var i = 0; i < start; i++){
+                        console.log(i);
+                    }
+                }
+                else if(skip == undefined){
+                    for(var i = start; i < stop; i++){
+                        console.log(i);
+                }
+                }
+                else{
+                    for(var i = start; i < stop; i+=skip){
+                    console.log(i);
+
+                }
+
+                }
+                }
+        
+
+
+            printRange(2,100000,5);
+            
+            
+            
+        </script>
+    </head>
+</html>

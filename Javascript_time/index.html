@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Time Declare</title>
+        <script>
+            var HOUR = 10;
+            var MINUTE = 50;
+            var PERIOD = "AM"
+            var str1 = "It's almost ";
+            var str2 = "It's just after ";
+            var part1;
+            var period;
+
+            if(MINUTE > 30){
+                HOUR +=1;
+                part1 = str1;
+            }
+            else if(MINUTE < 30){
+                HOUR = HOUR;
+                part1 = str2;
+            }
+
+            if(PERIOD == "AM"){
+                period =" in the morning."
+            }
+            else if(PERIOD =="pm"){
+                period =" in the evening."
+            }
+
+            console.log(part1 + HOUR + period);
+            
+            
+        </script>
+    </head>
+</html>
